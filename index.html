@@ -151,30 +151,38 @@
     <!-- Page loading spinner-->
 
     <main class="page-wrapper">
-
-        <!-- Navbar (Floating dark)-->
-        <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
-        <header class="header navbar navbar-expand-lg bg-baf navbar-floating navbar-sticky navbar-stuck"
-            data-scroll-header="" data-fixed-element="">
+        <header class="header navbar navbar-expand-lg navbar-floating navbar-sticky navbar-light bg-baf navbar-stuck"
+            data-fixed-element="">
             <div class="container px-0 px-xl-3">
                 <button class="navbar-toggler ms-n2 me-2" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#infoMenu"><span class="navbar-toggler-icon"></span></button><a
+                    data-bs-target="#primaryMenu"><span class="navbar-toggler-icon"></span></button><a
                     class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="index.html"><img
-                        class="d-none d-lg-block border border-light border-2" src="images/Logo-BAF.webp" alt="Around"
-                        width="60"><img class="d-lg-none" src="images/Logo-BAF.webp" alt="Around" width="58"></a>
-                <div class="d-lg-flex d-none align-items-center order-lg-3 ms-lg-auto ">
-                    <li class="nav-item nav-link-style  text-nowrap "><a class="nav-link text-light"
-                            href="#">Beranda</a> </li>
-                    <li class="nav-item nav-link-style  text-nowrap "><a class="nav-link text-light" href="#">Tentang
-                            Kami</a>
-                    </li>
-                    <li class="nav-item nav-link-style  text-nowrap "><a class="nav-link text-light"
-                            href="#">Layanan</a> </li>
-                    <li class="nav-item nav-link-style  text-nowrap "><a class="nav-link text-light" href="#">Kontak</a>
-                    </li>
+                        class="navbar-floating-logo d-none d-lg-block" src="images/Logo-BAF.webp" alt="Around"
+                        width="80"><img class="navbar-stuck-logo" src="images/Logo-BAF.webp" alt="Around"
+                        width="80"><img class="d-lg-none" src="images/Logo-BAF.webp" alt="Around" width="58"></a>
 
+                <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
+                    <ul class="navbar-nav d-lg-flex d-none">
+                        <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle text-light"
+                                href="#" data-bs-toggle="dropdown">Beranda</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle  text-light"
+                                href="#" data-bs-toggle="dropdown">Tentang Kami</a>
+
+                        </li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle  text-light" href="#"
+                                data-bs-toggle="dropdown">Layanan</a>
+
+                        </li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle  text-light" href="#"
+                                data-bs-toggle="dropdown">Kontak</a>
+
+                        </li>
+
+                    </ul>
                 </div>
-                <div class="offcanvas offcanvas-collapse order-lg-2" id="infoMenu">
+
+                <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
                     <div class="offcanvas-header navbar-shadow">
                         <h5 class="mt-1 mb-0">Menu</h5>
                         <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas"
@@ -182,15 +190,21 @@
                     </div>
                     <div class="offcanvas-body">
                         <!-- Menu-->
-                        <ul class="navbar-nav d-lg-none">
-                            <li class="nav-item nav-link-style  text-nowrap "><a class="nav-link" href="#">Beranda</a>
+                        <ul class="navbar-nav d-lg-none d-block">
+                            <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle text-light"
+                                    href="#" data-bs-toggle="dropdown">Beranda</a>
                             </li>
-                            <li class="nav-item nav-link-style  text-nowrap "><a class="nav-link" href="#">Tentang
-                                    Kami</a>
+                            <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle  text-light"
+                                    href="#" data-bs-toggle="dropdown">Tentang Kami</a>
+
                             </li>
-                            <li class="nav-item nav-link-style  text-nowrap "><a class="nav-link" href="#">Layanan</a>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle  text-light" href="#"
+                                    data-bs-toggle="dropdown">Layanan</a>
+
                             </li>
-                            <li class="nav-item nav-link-style  text-nowrap "><a class="nav-link" href="#">Kontak</a>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle  text-light" href="#"
+                                    data-bs-toggle="dropdown">Kontak</a>
+
                             </li>
 
                         </ul>
@@ -198,6 +212,7 @@
                 </div>
             </div>
         </header>
+
         <!-- Page content-->
         <!-- Hero-->
         <section class=" " style="margin-top: 80px;">
@@ -513,7 +528,7 @@
             <hr class="border-top border-1 container-fluid">
             <div class="container d-flex px-0 px-xl-3">
                 <p class=" text-light">© 2023 – PT Bussan Auto Finance</p>
-                <div class="d-lg-flex d-block align-items-center order-lg-3 ms-lg-auto ">
+                <div class="d-lg-flex d-block align-items-center  ms-lg-auto ">
                     <li class="nav-item nav-link-style  text-nowrap "><a class="nav-link text-light"
                             href="#">Beranda</a> </li>
                     <li class="nav-item nav-link-style  text-nowrap "><a class="nav-link text-light" href="#">Tentang
